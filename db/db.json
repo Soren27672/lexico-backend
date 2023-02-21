@@ -1,4 +1,139 @@
 {
+  "gameData": {
+    "info": {
+      "header": "Welcome to Lexico!",
+      "description": "Lexico is a word guessing game similar to Hangman and Wheel of Fortune. In each round, you'll be given an array of blanks representing a hidden word or phrase. Guess letters with your keyboard one by one to reveal them in the puzzle. Once you've revealed all the letters, you'll be awarded points based on how difficult the puzzle was. But be careful, guessing the wrong letter will reduce your reward!\n\nOnce you've gained enough points, head to the shop to purchase and upgrade bonuses that can help you get more points out of each puzzle.\n\nFinally, post your score to the leaderboard to compete for the title of Lexico Champion!",
+      "button": "Lex Go!"
+    },
+    "valueData": {
+      "base": 50,
+      "strike": 0.2,
+      "variance": 350,
+      "maxLetterValue": 57,
+      "A": 15,
+      "B": 47,
+      "C": 25,
+      "D": 41,
+      "E": 1,
+      "F": 49,
+      "G": 45,
+      "H": 43,
+      "I": 20,
+      "J": 57,
+      "K": 52,
+      "L": 30,
+      "M": 43,
+      "N": 24,
+      "O": 21,
+      "P": 42,
+      "Q": 57,
+      "R": 19,
+      "S": 29,
+      "T": 23,
+      "U": 39,
+      "V": 53,
+      "W": 51,
+      "X": 57,
+      "Y": 49,
+      "Z": 57
+    },
+    "bonusData": [
+      {
+        "id": 1,
+        "name": "Lucky Letter",
+        "image": "Luckyletter.png",
+        "description": "You've got a lucky letter! Upon starting a puzzle, any letters that match your lucky letter will be revealed! What's more: you'll earn 400 points for each one! Purchase upgrades for more common letters.",
+        "thumbText": "letter",
+        "price": {
+          "base": 200,
+          "growthRate": 1.1
+        },
+        "sequence": [
+          "None",
+          "Q",
+          "J",
+          "Z",
+          "X",
+          "V",
+          "K",
+          "W",
+          "Y",
+          "F",
+          "B",
+          "G",
+          "H",
+          "M",
+          "P",
+          "D",
+          "U",
+          "C",
+          "L",
+          "S",
+          "N",
+          "T",
+          "O",
+          "I",
+          "R",
+          "A",
+          "E"
+        ],
+        "progression": "sequence",
+        "value": 400,
+        "limit": 26,
+        "unit": {
+          "singular": "",
+          "plural": ""
+        }
+      },
+      {
+        "id": 2,
+        "name": "Lifesaver",
+        "image": "Lifesaver.png",
+        "description": "Mistakes happen, so come prepared! Lifesavers prevent you from being penalized for incorrect guesses. Upgrade to increase how many lifesavers you have per round.",
+        "thumbText": "level",
+        "price": {
+          "base": 500,
+          "growthRate": 1.5
+        },
+        "progression": "increment",
+        "limit": 1000,
+        "unit": {
+          "singular": " Lifesaver",
+          "plural": " Lifesavers"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Rapid Input",
+        "image": "RapidInput.png",
+        "description": "One after another! Guessing two correct letters within two seconds earns bonus points! This bonus only applies for the first five letters. Upgrade to increase the reward.",
+        "thumbText": "reward",
+        "price": {
+          "base": 300,
+          "growthRate": 2
+        },
+        "progression": "recursive",
+        "recursion": {
+          "base": 200,
+          "growthRate": 1.5
+        },
+        "limit": 1000,
+        "unit": {
+          "singular": " Point Reward",
+          "plural": " Point Reward"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "name": "Max",
+      "points": 99640,
+      "time": 672000,
+      "date": "2/19/23",
+      "id": 1
+    }
+  ],
   "puzzles": [
     {
       "string": "BLUEBERRY PANCAKES",
@@ -1838,7 +1973,7 @@
         "I",
         "E"
       ],
-      "category": "food",
+      "category": "Food",
       "id": 79
     },
     {
@@ -1864,7 +1999,7 @@
         "E",
         "E"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 80
     },
     {
@@ -1879,7 +2014,7 @@
         "A",
         "D"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 81
     },
     {
@@ -1892,7 +2027,7 @@
         "U",
         "S"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 82
     },
     {
@@ -1911,7 +2046,7 @@
         "E",
         "E"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 83
     },
     {
@@ -1925,7 +2060,7 @@
         "I",
         "L"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 84
     },
     {
@@ -1940,7 +2075,7 @@
         "T",
         "O"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 85
     },
     {
@@ -1957,7 +2092,7 @@
         "O",
         "N"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 86
     },
     {
@@ -1973,7 +2108,7 @@
         "O",
         "N"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 87
     },
     {
@@ -1988,7 +2123,7 @@
         "E",
         "L"
       ],
-      "category": "nature",
+      "category": "Nature",
       "id": 88
     },
     {
